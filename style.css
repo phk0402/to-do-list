@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.p__toDoList {
+  width: 100%;
+  padding: 40px 0;
+  background: linear-gradient(270deg, #88d3ce, #6e45e2);
+  background-size: 100% 100%;
+  animation: AnimationName 6s ease infinite;
+}
+
+.p__toDoList .wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.p__toDoList .title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.input-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#todoInput {
+  width: 300px;
+  height: 40px;
+  padding: 0 16px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.btn-enter {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin-left: 8px;
+  background-color: #251a86;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  color: #fff;
+  transition: .3s;
+}
+
+.btn-enter:hover {
+  color: #251a86;
+  border: 2px solid #251a86;
+  background-color: transparent;
+}
+
+.toDoItem {
+  width: fit-content;
+  height: 35px;
+  border-radius: 6px;
+  margin-top: 8px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.toDoItem span{
+  font-size: 16px;
+  margin-right: 8px;
+}
