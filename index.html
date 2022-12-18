@@ -27,14 +27,15 @@
         </ul>
 
     <script>
-      // 리스트 추가 삭제
       function toDoItem(item) {
+        // 리스트 추가 삭제
         document.getElementById('toDoItem').style.display = item;
 
         // input 태그에 내용입력시 리스트에 추가
-        const addToDo = document.getElementById('toDoInput').value;
-        document.getElementById('toDoContent').innerText = addToDo;
+        const enterToDo = document.getElementById('toDoInput').value;
+        document.getElementById('toDoContent').innerText = enterToDo;
       }
+
     </script>
       </div>
     </div>
